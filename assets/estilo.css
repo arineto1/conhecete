@@ -1,0 +1,51 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "cabecalho cabecalho"
+    "principal principal"
+    "rodape rodape";
+}
+.cabecalho{
+    grid-area: cabecalho;
+    background-color: #545454;
+    display: grid;
+    place-content: center;
+    
+
+
+}
+.cabecalho p{
+    font-family: "Caveat";
+    color:#A4C6E1;
+    font-size: 50px;
+    margin: 0;
+       
+}
+.cabecalho a{
+    color:#A4C6E1;
+         
+}
+
+.principal{
+    grid-area: principal;
+    background-color: #A4C6E1;
+    height: calc(100vh - 160px);
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: #545454;
+}
+img{
+    display: block;
+    margin: auto;
+    height: calc(100vh - 160px);
+}
